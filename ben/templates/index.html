@@ -1,0 +1,101 @@
+<head> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></script>
+   
+ </head>
+ 
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+   
+   
+ </nav>
+ <nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span> 
+       </button>
+       <a class="navbar-brand" href="#">Kibet Ngetich Bernard</a>
+      </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="#about">ABOUT</a></li>
+         
+         <li><a href="#portfolio">PORTFOLIO</a></li>
+         
+         <li><a href="#contact">CONTACT</a></li>
+       </ul>
+      </div>
+   </div>
+ </nav>
+  
+     <div id= "about" class="jumbotron text-center">
+     <h2>About me</h2>      
+     <p>My Name is Kibet Ngetich Bernard, I am a Fullstack Developer </p>
+   </div>
+ </div>
+  
+ <div id="portfolio" class="container-fluid bg-3 text-center">    
+   <h2>Portfolio</h2>
+   <h4><em>These are some of the projects i have worked on;</em></h4> <br>
+   <div class="row text-center">
+     {% for project in projects%}
+     
+     <div class="col-sm-4">
+
+        <img src="{{project.image.url}}" class="img-responsive" style="width:100%" alt="Image">
+        <br>
+        <button class="btn-success">Project Details</button>
+     </div>
+       
+     {%endfor%}
+   </div>
+ </div><br>
+ 
+    <!-- Container (Contact Section) -->
+ <div id="contact" class="container-fluid bg-grey">
+   <h2 class="text-center">CONTACT</h2>
+   <div class="row">
+     <div class="col-sm-5">
+       <p>Contact me and I'll get back to you within 24 hours.</p>
+       <button class=btn-info> Facebook </button> 
+       <button class="btn-info ">Twitter</button> </i>
+     <button class="btn-info ">Linkedin</button> 
+     </div>
+   
+ 
+  
+     <div class="col-sm-7 slideanim">
+       <div class="row">
+         <div class="col-sm-6 form-group">
+           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+         </div>
+         <div class="col-sm-6 form-group">
+           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+         </div>
+       </div>
+       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+       <div class="row">
+         <div class="col-sm-12 form-group">
+           <button class="btn btn-default pull-right" type="submit">Send</button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+       
+    
+ <footer class="container-fluid  bg-1 text-center ">
+   <a href="#myPage" title="To Top">
+     <span class="glyphicon glyphicon-chevron-up"></span>
+   </a>
+   <p>Go Top</a></p> 
+   
+ </footer>
+ 
+ </body>
+ 

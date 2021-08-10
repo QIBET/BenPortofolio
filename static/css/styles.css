@@ -1,0 +1,77 @@
+  /* Style Nav Bar */
+
+  .navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    background-color: thistle !important;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+  }
+  
+  .navbar li a,
+  .navbar .navbar-brand {
+    color: purple !important;
+  }
+  
+  .navbar-nav li a:hover,
+  .navbar-nav li.active a {
+    color: purple !important;
+    background-color: white;
+      border-color: transparent;
+      color: #111 !important;
+    }
+    
+    /* Style about */
+    
+    .jumbotron {
+      background-color: linen !
+        important;
+      border-color: transparent;
+      /* light purple */
+      color: purple !important;
+      /* black */
+      padding: 50px 100px 25px 100px;
+    }
+    /*Style portfolio*/
+  #portfolio{
+  background-color: linen !
+        important;
+      border-color: transparent;
+      /* light purple */
+      color: purple !important;
+      /* black */
+      padding: 50px 100px 25px 100px;
+    }
+  
+   /*Style contact*/
+  #contact{
+  background-color: linen !
+        important;
+      border-color: transparent;
+      /* light purple */
+      color: purple !important;
+      /* black */
+      padding: 50px 100px 25px 100px;
+    }
+  
+  /*Style footer*/
+  
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: purple;
+  }
+  
+  
+  /*add scrollopsy so nav bar changes as scroll*/
+  /*<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  
+  <div id="about" class="container-fluid">
+  <div id="services" class="container-fluid">
+  <div id="portfolio" class="container-fluid">
+  <div id="pricing" class="container-fluid">
+  <div id="contact" class="container-fluid">
