@@ -1,6 +1,12 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
 <head> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></script>
    
@@ -10,33 +16,40 @@
    
    
  </nav>
- <nav class="navbar navbar-default navbar-fixed-top">
-   <div class="container">
-      <div class="navbar-header">
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span> 
-       </button>
-       <a class="navbar-brand" href="#">Kibet Ngetich Bernard</a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#">Kibet Ngetich Bernard</a>
+          </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">ABOUT</a></li>
+              
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
       </div>
-     <div class="collapse navbar-collapse" id="myNavbar">
-       <ul class="nav navbar-nav navbar-right">
-         <li><a href="#about">ABOUT</a></li>
-         
-         <li><a href="#portfolio">PORTFOLIO</a></li>
-         
-         <li><a href="#contact">CONTACT</a></li>
-       </ul>
-      </div>
-   </div>
- </nav>
+    </nav>
   
-     <div id= "about" class="jumbotron text-center">
-     <h2>About me</h2>      
-     <p>My Name is Kibet Ngetich Bernard, I am a Fullstack Developer </p>
-   </div>
- </div>
+      <div id= "intro" class="landing text-center">
+        <h1>Hi There!!, My name is Bernard</h1>
+        
+    
+      </div>
+      <div id= "about" class="jumbotron text-center "> 
+        <h2>About me</h2> 
+        <div class="row">
+          <div class="col-12 col-md-8"><p>My Name is Kibet Ngetich Bernard, I am a Fullstack Developer. I have skills in Python, Javascript, HTML5, CSS with knowledge in frameworks such as Django, Angular and Flask. I have an Education background in Software Development from Moringa School. A self-taught expert in Computer support and networking.  </p></div>
+          <div class="col-6 col-md-4"><img src="/static/images/benny.jpeg" class="img-responsive img" height="150px" style="width:150px" alt="Image"> </div>
+        </div>
+    </div>
   
  <div id="portfolio" class="container-fluid bg-3 text-center">    
    <h2>Portfolio</h2>
@@ -60,7 +73,7 @@
    <h2 class="text-center">CONTACT</h2>
    <div class="row">
      <div class="col-sm-5">
-       <p>Contact me and I'll get back to you within 24 hours.</p>
+       <p>Reach out to me on the following sites.</p>
        <button class=btn-info> Facebook </button> 
        <button class="btn-info ">Twitter</button> </i>
      <button class="btn-info ">Linkedin</button> 
@@ -98,4 +111,5 @@
  </footer>
  
  </body>
+</html>
  
